@@ -10,7 +10,7 @@ def Turnon(update, context):
   context.bot.send_photo(chat_id=update.effective_chat.id,photo='https://png.pngtree.com/png-clipart/20200831/original/pngtree-glowing-white-led-bulb-png-image_5488088.jpg')
   send_value(1)
 def send_value(value):
-  feed = aio.feeds('light')
+  feed = aio.feeds('lightc')
   aio.send_data(feed.key,value)
 
 def input_message(update, context):
